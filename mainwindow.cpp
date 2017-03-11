@@ -42,6 +42,8 @@ MainWindow::MainWindow(QWidget *parent) :
     QQuickView *QuickView2 = new QQuickView(QUrl("qrc:/my.qml"));
     QWidget *ViewContainer2 = QWidget::createWindowContainer(QuickView2, this);
     ui->horizontalLayout_2->addWidget(ViewContainer2);
+
+
     QObject *item = (QObject*)QuickView2->rootObject();
 
     //    QObject *topLevel = engine.rootObjects().value(0);

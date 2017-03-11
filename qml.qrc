@@ -2,5 +2,9 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>my.qml</file>
+        <file>teethscanheader.qml</file>
+        <file>teethscan_left.qml</file>
+        <file>teethscan_right.qml</file>
+        <file>teethscan_header.jpg</file>
     </qresource>
 </RCC>

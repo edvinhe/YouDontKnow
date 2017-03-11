@@ -8,7 +8,8 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 SOURCES += main.cpp \
     handletextfield.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    teethscan_window.cpp
 
 RESOURCES += qml.qrc
 
@@ -20,7 +21,9 @@ include(deployment.pri)
 
 HEADERS += \
     handletextfield.h \
-    mainwindow.h
+    mainwindow.h \
+    teethscan_window.h
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    teethscan_window.ui

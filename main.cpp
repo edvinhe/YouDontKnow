@@ -6,7 +6,7 @@
 #include "handletextfield.h"
 
 #include<QApplication>
-#include"MainWindow.h"
+#include "teethscan_window.h"
 
 int main(int argc, char *argv[])
 {
@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 //    QObject::connect(&handleTextField, SIGNAL(setTextField(QVariant)),
 //                         window, SLOT(setTextField(QVariant)));
 
-    MainWindow w;
+    TeethScanWindow w;
     w.show();
 
     return app.exec();
