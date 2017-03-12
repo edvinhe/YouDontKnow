@@ -7,16 +7,23 @@ namespace Ui {
 class TeethScanWindow;
 }
 
-class TeethScanWindow : public QMainWindow
-{
+class TeethScanWindow : public QMainWindow {
     Q_OBJECT
 
-public:
-    explicit TeethScanWindow(QWidget *parent = 0);
+  public:
+    explicit TeethScanWindow(QWidget* parent = 0);
     ~TeethScanWindow();
 
-private:
-    Ui::TeethScanWindow *ui;
+
+    virtual void moveEvent(QMoveEvent* event);
+
+  private:
+    void createControlPanel();
+
+  private:
+    Ui::TeethScanWindow* ui;
+
+    QWidget* tools_panel_;
 };
 
 #endif // TEETHSCAN_WINDOW_H
